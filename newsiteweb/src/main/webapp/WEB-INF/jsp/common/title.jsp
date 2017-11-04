@@ -31,7 +31,7 @@
             </div>
             <div class="collapse navbar-collapse" id="navbar-menu">
                 <ul class="nav navbar-nav" data-in="fadeInDown" data-out="fadeOutUp">
-                    <li><a href="#">首页</a></li>
+                    <li><a href="${pageContext.request.contextPath}/index">首页</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">机关</a>
                         <ul class="dropdown-menu animated">
