@@ -2,11 +2,9 @@ package com.newsite.web.dao;
 
 
 import com.newsite.web.model.User;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.stereotype.Component;
 
-@MapperScan
-@Component(value = "userMapper")
+@Component
 public interface UserMapper {
 
     int deleteByPrimaryKey(Integer userid);

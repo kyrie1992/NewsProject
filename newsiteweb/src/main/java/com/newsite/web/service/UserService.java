@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserService {
 
-    @Autowired
+    @Autowired(required=true)
     private UserMapper userMapper;
 
     public User getUserInfo(){
