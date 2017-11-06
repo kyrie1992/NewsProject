@@ -1,2 +1,4 @@
-# NewsProject
-鏂伴椈缃戠珯
+1、f_commonproject是提取的公用的项目模版，以后开发可以继续使用
+2、master分支是主分支，发布项目走master分支
+3、f_originproject是每日项目的版本迭代，每天开发完毕后提交到master分支上
+4、修改说明写到这个里面
