@@ -1,0 +1,38 @@
+.newstitle{
+    height:100px;
+    line-height:100px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+.newsnote{
+    height:40px;
+    line-height:40px;
+    background-color: #eeeeee;
+}
+.newscontent{
+   /* font-size:20px;*/
+}
+.newscontent p{
+    line-height:35px;
+}
+.thumbnailimg{
+    height:300px;
+    width:400px;
+
+}
+.thumbnail img{
+    width: 400px;
+    height: 300px;
+
+}
+.caption span{
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+
+}
+.thumbnail{
+    border: 1px solid white;
+}

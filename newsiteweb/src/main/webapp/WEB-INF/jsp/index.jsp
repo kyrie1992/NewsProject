@@ -63,7 +63,7 @@
                 <ul class="newListUL">
                     <li>
                         <div class="pull-left">
-                            <a href="${pageContext.request.contextPath}/news/detail">一支队</a>
+                            <a href="${pageContext.request.contextPath}/news/detail" target="view_window">一支队</a>
                         </div>
                         <div class="pull-right">
                             <label>[ 乡风文明 ]</label>
