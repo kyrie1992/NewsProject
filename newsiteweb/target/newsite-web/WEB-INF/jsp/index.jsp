@@ -7,6 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ include file="./common/titlefiles.jsp" %>
 <html>
 <head>
     <title>首页</title>
@@ -15,12 +16,12 @@
 <div class="container">
     <%@ include file="./common/title.jsp" %>
     <div id="picDiv" class="row">
-        <img src="${pageContext.request.contextPath}/image/home/index_bg.png"/>
+        <img class="img-responsive center-block" src="${pageContext.request.contextPath}/image/home/index_bg.png"/>
     </div>
 
     <div id="newsDiv" class="row">
 
-        <div id="leftNewsDiv" class="col-lg-2">
+        <div id="leftNewsDiv" class="col-lg-2 col-md-2">
             <div class="list-group">
                 <a href="#" class="list-group-item active">
                     新闻动态
@@ -54,7 +55,7 @@
         </div>
 
 
-        <div id="rightNewsDiv" class="col-lg-10">
+        <div id="rightNewsDiv" class="col-lg-10 col-md-10">
             <div class="page-header">
                 <h4>新闻列表 <small>共20条</small></h4>
             </div>
