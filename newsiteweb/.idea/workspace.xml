@@ -42,7 +42,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
     <push-targets>
-      <push-target-info target-remote="origin" target-branch="master" repo="$PROJECT_DIR$/.." source="f_originproject" />
+      <push-target-info target-remote="origin" target-branch="f_commonproject" repo="$PROJECT_DIR$/.." source="f_originproject" />
     </push-targets>
   </component>
   <component name="GradleLocalSettings">
@@ -459,7 +459,7 @@
       <workItem from="1509766135148" duration="17599000" />
       <workItem from="1509787062004" duration="4944000" />
       <workItem from="1509794250309" duration="4950000" />
-      <workItem from="1509934621857" duration="1658000" />
+      <workItem from="1509934621857" duration="1751000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目内容">
       <created>1509719480372</created>
@@ -503,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1509935662371</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1、本地修改文件">
+      <created>1509936295547</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1509936295547</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35309000" />
+    <option name="totallyTimeSpent" value="35402000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -595,7 +602,8 @@
     <MESSAGE value="1、完成首页功能并发布" />
     <MESSAGE value="1、提取公用的页面模块&#10;2、作为项目模版使用" />
     <MESSAGE value="1、修复了页面布局自适应的问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="1、修复了页面布局自适应的问题" />
+    <MESSAGE value="1、本地修改文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="1、本地修改文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
