@@ -1,0 +1,23 @@
+.page-header h3{
+    color:#ed041a;
+    font-weight: bold;
+
+}
+.middleteamtitlediv ul{
+    height:40px;
+    line-height:40px;
+    background-color: #ed041a;
+    overflow: hidden;
+}
+.middleteamtitlediv ul li{
+    width: 120px;
+    float: left;
+    color:white;
+    text-align: center;
+    list-style: none;
+}
+.middleteamtitlediv ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

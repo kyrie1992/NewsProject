@@ -8,10 +8,10 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <div id="titleDiv" class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-3">
         <h3 id="webTitleH3">黄金五支队</h3>
     </div>
-    <div class="col-lg-8" style="height: 120px;">
+    <div class="col-lg-9" style="height: 120px;">
         <nav class="navbar navbar-default navbar-mobile bootsnav on" style="margin-top:20px;">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
@@ -33,7 +33,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">一大队</a>
                         <ul class="dropdown-menu animated">
-                            <li><a href="#">一中队</a></li>
+                            <li><a href="${pageContext.request.contextPath}/singlehome">一中队</a></li>
                             <li><a href="#">二中队</a></li>
                         </ul>
                     </li>

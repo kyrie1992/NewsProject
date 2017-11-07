@@ -11,7 +11,6 @@ public class NewsManagerController {
     @RequestMapping("/detail")
     public ModelAndView newDetail(String newsid){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.addObject("newsTitle","文章标题");
         modelAndView.setViewName("/news/newsdetail");
         return modelAndView;
     }
