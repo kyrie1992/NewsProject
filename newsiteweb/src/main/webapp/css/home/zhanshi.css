@@ -1,0 +1,49 @@
+.zhanshi{
+    width:1000px;
+    margin:10px auto;
+    float: left;
+}
+
+.zhanshi_left{
+    width: 332px;
+    float: left;
+    overflow: hidden;
+}
+.zhanshi_img{
+    height: 260px;
+    overflow: hidden;
+}
+.zhanshi_middle{
+    margin: 0px 10px;
+}
+.zhanshi_middle, .zhanshi_right{
+    width: 30%;
+    float: left;
+}
+
+.new_list{
+    height: 250px;
+    border:2px dashed #f0f0f0;
+}
+.list-left{
+    float: left !important;
+}
+.list-left a:link{
+color: #b71622;
+}
+.list-left a:link,.list-left a:visited{
+    text-decoration: none;
+}
+.huo-left{
+    width: 55%;
+    float:left;
+}
+.huo-middle{
+    float: left;
+    width: 7%;
+}
+.huo-right{
+    width: auto;
+    float: right;
+    padding-left: 5px;
+}
