@@ -71,7 +71,7 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 }
 
 #picDiv {
-    margin-top: 90px;
+    margin-top:10px;
     /*height:380px;*/
 }
 #picDiv img{
@@ -79,11 +79,20 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
     height: 100%;*/
 }
 
-#leftNewsDiv{
+#newsDiv{
     margin-top: 40px;
 }
 
+#leftNewsDiv{
 
+    width:20%;
+    float: left;
+}
+
+#rightNewsDiv{
+    width:80%;
+    float: left;
+}
 
 .newListUL{
     margin: 0px;
@@ -115,11 +124,13 @@ nav.navbar.bootsnav li.dropdown ul.dropdown-menu{
 }
 
 #footerDiv{
- height: 80px;
+    height: 80px;
     line-height: 80px;
- background-color: #b71622;
+    background-color: #b71622;
     color: white;
     text-align: center;
+    width: 1000px;
+    margin: 0 auto;
 
 }
 
