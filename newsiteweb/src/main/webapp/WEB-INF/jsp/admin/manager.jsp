@@ -11,16 +11,12 @@
     <link href="${ctx}/css/common/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <!-- font Awesome -->
     <link href="${ctx}/css/common/font-awesome.css" rel="stylesheet" type="text/css" />
-    <!-- Ionicons -->
-    <%--<link href="${ctx}/css/common/ionicons.min.css" rel="stylesheet" type="text/css" />--%>
     <!-- Morris chart -->
     <link href="${ctx}/css/common/morris/morris.css" rel="stylesheet" type="text/css" />
     <!-- jvectormap -->
     <link href="${ctx}/css/common/jvectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
     <!-- Date Picker -->
     <link href="${ctx}/css/common/datepicker/datepicker3.css" rel="stylesheet" type="text/css" />
-    <!-- fullCalendar -->
-    <!-- <link href="css/fullcalendar/fullcalendar.css" rel="stylesheet" type="text/css" /> -->
     <!-- Daterange picker -->
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
     <link href="${ctx}/css/common/daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
