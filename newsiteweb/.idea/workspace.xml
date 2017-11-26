@@ -8,19 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1aeabe1-ebf0-4766-a8fe-72137acec7fc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/dao/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web.war" afterPath="$PROJECT_DIR$/target/newsite-web.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/dao/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/model/User.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/model/User.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/service/UserService.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/service/UserService.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/userMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapping/userMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/mapping/userMapper.xml" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/mapping/userMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/footer.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/jsp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,7 +35,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="484">
-              <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+              <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -64,7 +55,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/ManagerController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="528">
-              <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+              <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -295,167 +286,6 @@
             <path>
               <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="news" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="newsiteweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newsiteweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="jsp" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1120,7 +950,7 @@
       <workItem from="1509946978168" duration="284000" />
       <workItem from="1509977639810" duration="7879000" />
       <workItem from="1510065594715" duration="2390000" />
-      <workItem from="1511674503375" duration="13880000" />
+      <workItem from="1511674503375" duration="14385000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目内容">
       <created>1509719480372</created>
@@ -1276,11 +1106,25 @@
       <option name="project" value="LOCAL" />
       <updated>1511688413381</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="ADD:添加后台管理界面，框架搭建完毕">
+      <created>1511688440881</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1511688440881</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Merge branch 'f_liuchangrui' of https://github.com/kyrie1992/NewsProject into f_originproject&#10;&#10;Conflicts:&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/title.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/titlefiles.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/index.jsp&#10;&#9;newsiteweb/src/main/webapp/css/home/index.css">
+      <created>1511688909243</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1511688909243</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73805000" />
+    <option name="totallyTimeSpent" value="74310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1314,7 +1158,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32717392" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2196162" sideWeight="0.49130434" order="0" side_tool="false" content_ui="combo" />
@@ -1429,7 +1273,8 @@
     <MESSAGE value="ADD:添加后台管理" />
     <MESSAGE value="ADD:添加后台管理界面" />
     <MESSAGE value="ADD:添加后台管理界面，框架搭建完毕" />
-    <option name="LAST_COMMIT_MESSAGE" value="ADD:添加后台管理界面，框架搭建完毕" />
+    <MESSAGE value="Merge branch 'f_liuchangrui' of https://github.com/kyrie1992/NewsProject into f_originproject&#10;&#10;Conflicts:&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/title.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/titlefiles.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/index.jsp&#10;&#9;newsiteweb/src/main/webapp/css/home/index.css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'f_liuchangrui' of https://github.com/kyrie1992/NewsProject into f_originproject&#10;&#10;Conflicts:&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/title.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/common/titlefiles.jsp&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/index.jsp&#10;&#9;newsiteweb/src/main/webapp/css/home/index.css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1778,7 +1623,7 @@
         <state relative-caret-position="308">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#label#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1794,7 +1639,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
-          <caret line="28" column="39" lean-forward="true" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+          <caret line="28" column="39" lean-forward="false" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1818,7 +1663,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/ManagerController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
-          <caret line="24" column="35" lean-forward="true" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+          <caret line="24" column="35" lean-forward="false" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
