@@ -14,7 +14,10 @@
     overflow: hidden;
 }
 .zhanshi_middle{
-    margin: 0px 10px;
+    margin-top: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0;
 }
 .zhanshi_middle, .zhanshi_right{
     width: 30%;
