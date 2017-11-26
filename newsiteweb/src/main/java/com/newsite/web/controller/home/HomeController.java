@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/")
 public class HomeController {
 
+
     @RequestMapping("/")
     public ModelAndView index1(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
@@ -24,13 +25,82 @@ public class HomeController {
         modelAndView.setViewName("index");
         return modelAndView;
     }
-    @RequestMapping("/singlehome")
+    @RequestMapping("/1zhongdui")
     public ModelAndView index3(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("news/singlenews");
         return modelAndView;
     }
+    @RequestMapping("/2zhongdui")
+    public ModelAndView index4(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/3zhongdui")
+    public ModelAndView index5(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/4zhongdui")
+    public ModelAndView index6(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/5zhongdui")
+    public ModelAndView index7(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/6zhongdui")
+    public ModelAndView index8(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }@RequestMapping("/7zhongdui")
+    public ModelAndView index9(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/8zhongdui")
+    public ModelAndView index10(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
 
-
+    @RequestMapping("/9zhongdui")
+    public ModelAndView index11(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/qingwuzongdui")
+    public ModelAndView index12(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/huayanshi")
+    public ModelAndView index13(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }@RequestMapping("/weishengdui")
+    public ModelAndView index14(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
+    @RequestMapping("/xiulisuo")
+    public ModelAndView index15(HttpServletRequest request, HttpServletResponse response){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("news/singlenews");
+        return modelAndView;
+    }
 
 }

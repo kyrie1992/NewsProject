@@ -10,7 +10,7 @@
 <body>
 <div class="container" style="width: 840px; ">
     <div class="row">
-        <img class="img-responsive center-block" src="${pageContext.request.contextPath}/image/news/xx.jpg"/>
+        <img class="img-responsive center-block" src="${pageContext.request.contextPath}/image/news/xx.gif"/>
     </div>
     <div class="newstitle">
         一中队立足岗位练兵提升通信保障效益
@@ -47,7 +47,7 @@
     </div>
 
     <div>
-        <img class="img-responsive center-block" style="margin-left: 0px;" src="${pageContext.request.contextPath}/image/news/20170912141416_77727.png"/>
+        <img class="img-responsive center-block" style="margin-left: 0px;" src="${pageContext.request.contextPath}/image/home/logo.png"/>
     </div>
 
     <div class="row">

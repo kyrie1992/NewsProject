@@ -12,7 +12,7 @@
         </div>
         <div class="middleteamtitlediv">
             <ul>
-                <li><a href="#">首页</a></li>
+                <li><a href="${pageContext.request.contextPath}/index">首页</a></li>
                 <li><a href="#">军事工作</a></li>
                 <li><a href="#">政治工作</a></li>
                 <li><a href="#">后勤工作</a></li>
@@ -33,29 +33,29 @@
                         新闻动态
                     </a>
                     <a href="#" class="list-group-item">公告公示</a>
-                    <a href="#" class="list-group-item">省市新闻</a>
+                    <a href="#" class="list-group-item">中队新闻</a>
                     <a href="#" class="list-group-item">领导关怀</a>
                     <a href="#" class="list-group-item">时事要点</a>
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item active">
-                        党的建设
+                        中队建设
                     </a>
                     <a href="#" class="list-group-item">组织建设</a>
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item active">
-                        建设新农村
+                        中心工作
                     </a>
-                    <a href="#" class="list-group-item">乡风文明</a>
-                    <a href="#" class="list-group-item">村容整洁</a>
+                    <a href="#" class="list-group-item">中心工作</a>
+                    <a href="#" class="list-group-item">中心工作</a>
                 </div>
                 <div class="list-group">
                     <a href="#" class="list-group-item active">
-                        农业信息
+                        中心工作
                     </a>
-                    <a href="#" class="list-group-item">农业科技</a>
-                    <a href="#" class="list-group-item">产品供求</a>
+                    <a href="#" class="list-group-item">中心工作</a>
+                    <a href="#" class="list-group-item">中心工作</a>
                 </div>
 
             </div>
@@ -69,120 +69,120 @@
                     <ul class="newListUL">
                         <li>
                             <div class="pull-left">
-                                <a href="${pageContext.request.contextPath}/news/detail" target="view_window">一支队</a>
+                                <a href="${pageContext.request.contextPath}/news/detail" target="view_window">一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 乡风文明 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
 
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
 
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
                         <li>
                             <div class="pull-left">
-                                <a href="#">新小麦最低收购价政策更具导向性</a>
+                                <a href="#">黄金五支队一中队</a>
                             </div>
                             <div class="pull-right">
-                                <label>[ 农业科技 ]</label>
+                                <label>[ 中心工作 ]</label>
                                 <label>2017-11-01</label>
                             </div>
                         </li>
