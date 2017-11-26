@@ -8,14 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1aeabe1-ebf0-4766-a8fe-72137acec7fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/LoginInterceptor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/ManagerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/SessionFilter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/404.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/manager/newslist.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/manager/newspublish.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/manager/usermanager.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/common/common.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/dao/UserMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/model/User.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/newsite/web/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/newsite/web/service/UserService.class" />
@@ -23,24 +15,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/dao/UserMapper.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/model/User.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/model/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/service/UserService.class" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/com/newsite/web/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsiteweb.iml" afterPath="$PROJECT_DIR$/newsiteweb.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/admin/AdminController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/user/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/user/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/dao/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapping/userMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapping/userMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" afterPath="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/common.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/common.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/footer.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/footer.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/leftmenu.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/admin/leftmenu.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapping/userMapper.xml" afterPath="$PROJECT_DIR$/target/classes/mapping/userMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/mapping/userMapper.xml" afterPath="$PROJECT_DIR$/target/newsite-web/WEB-INF/classes/mapping/userMapper.xml" />
@@ -1145,7 +1120,7 @@
       <workItem from="1509946978168" duration="284000" />
       <workItem from="1509977639810" duration="7879000" />
       <workItem from="1510065594715" duration="2390000" />
-      <workItem from="1511674503375" duration="13720000" />
+      <workItem from="1511674503375" duration="13739000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目内容">
       <created>1509719480372</created>
@@ -1266,11 +1241,18 @@
       <option name="project" value="LOCAL" />
       <updated>1511677513818</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="ADD:添加后台管理界面">
+      <created>1511688268194</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1511688268194</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73645000" />
+    <option name="totallyTimeSpent" value="73664000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
