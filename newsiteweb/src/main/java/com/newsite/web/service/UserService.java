@@ -12,8 +12,12 @@ public class UserService {
     @Autowired(required=true)
     private UserMapper userMapper;
 
-    public User getUserInfo(){
-        User user = userMapper.selectByPrimaryKey(1);
+    /**
+     * 根据名字查找用户
+     * @return
+     */
+    public User getUserInfo(String userName){
+        User user = userMapper.selectByName(userName);
         return user;
     }
 

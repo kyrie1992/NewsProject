@@ -16,7 +16,7 @@ public class UserController {
     @RequestMapping("/index")
     public ModelAndView Home(){
         ModelAndView modelAndView = new ModelAndView();
-        User user = userService.getUserInfo();
+        User user = userService.getUserInfo("");
         modelAndView.addObject("user",user);
         modelAndView.setViewName("index");
         return modelAndView;

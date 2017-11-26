@@ -55,6 +55,8 @@
 <!-- Director dashboard demo (This is only for demo purposes) -->
 <script src="${ctx}/js/Director/dashboard.js" type="text/javascript"></script>
 
+<script src="${ctx}/js/common/common.js" type="text/javascript"></script>
+
 
 
 

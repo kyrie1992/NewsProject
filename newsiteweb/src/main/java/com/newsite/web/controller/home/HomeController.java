@@ -11,12 +11,12 @@ import javax.servlet.http.HttpServletResponse;
 @RequestMapping("/")
 public class HomeController {
 
-  /*  @RequestMapping("/")
+    @RequestMapping("/")
     public ModelAndView index1(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("index");
         return modelAndView;
-    }*/
+    }
 
     @RequestMapping("/index")
     public ModelAndView index2(HttpServletRequest request, HttpServletResponse response){
