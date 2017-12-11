@@ -1,0 +1,33 @@
+package com.newsite.web.model;
+
+public class Notice {
+    private Integer noticeid;
+
+    private String title;
+
+    private String content;
+
+    public Integer getNoticeid() {
+        return noticeid;
+    }
+
+    public void setNoticeid(Integer noticeid) {
+        this.noticeid = noticeid;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title == null ? null : title.trim();
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content == null ? null : content.trim();
+    }
+}
