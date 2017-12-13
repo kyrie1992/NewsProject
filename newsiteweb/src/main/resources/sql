@@ -44,3 +44,31 @@ CREATE TABLE `notice` (
 INSERT INTO `user` VALUES ('1', '十九大', '12月2日，由中国桥牌协会与中央国家机关桥牌协会联合主办的“做智力体操，学十九大精神”桥牌知识远程培训活动在中国棋院举行了开幕式，中国桥牌协会副主席、中央国家机关桥协副主席徐双未出席开班仪式并致辞，共有来自中央国家机关各单位的近百名学员前来参加。
                                         　　“做智力体操，学十九大精神”活动是由中国桥协和中央国家机关桥协联合主办，通过桥牌手机软件，进行远程学习、练习和比赛的一项桥牌普及推广活动。活动的...');
 ---------------------------------
+
+CREATE TABLE new
+(
+  newid        INT AUTO_INCREMENT
+    PRIMARY KEY,
+  title        VARCHAR(25) NOT NULL
+  COMMENT '标题',
+  author       VARCHAR(20) NULL
+  COMMENT '新闻作者',
+  photographer VARCHAR(20) NULL
+  COMMENT '摄影者',
+  kind         VARCHAR(20) NULL
+  COMMENT '新闻种类',
+  unit         VARCHAR(20) NULL
+  COMMENT '所属单位',
+  approver     VARCHAR(20) NULL
+  COMMENT '审批人',
+  createtime   DATETIME    NULL
+  COMMENT '发布时间',
+  content      MEDIUMBLOB  NULL
+  COMMENT '内容和图片',
+  looknum      INT         NULL
+  COMMENT '浏览次数'
+)
+  COMMENT '新闻';
+
+  -----------------------------------------------------
+  INSERT INTO `user` VALUES

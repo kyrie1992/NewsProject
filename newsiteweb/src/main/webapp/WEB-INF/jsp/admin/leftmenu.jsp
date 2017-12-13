@@ -47,6 +47,12 @@
                 </a>
             </li>
 
+            <li id="noticePublishLi">
+                <a href="${ctx}/manager/noticepublish">
+                    <i class="fa fa-gavel"></i> <span>公告发布</span>
+                </a>
+            </li>
+
             <li id="userManagerLi">
                 <a href="${ctx}/manager/usermanager">
                     <i class="fa fa-users"></i> <span>用户管理</span>

@@ -21,6 +21,12 @@ public class ManagerController {
         modelAndView.setViewName("admin/manager/newspublish");
         return modelAndView;
     }
+    @RequestMapping("/noticepublish")
+    public ModelAndView noticePublish(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("admin/manager/noticepublish");
+        return modelAndView;
+    }
 
     @RequestMapping("/usermanager")
     public ModelAndView userManager(){

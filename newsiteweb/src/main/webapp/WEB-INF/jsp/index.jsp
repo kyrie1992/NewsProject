@@ -51,7 +51,10 @@
     <%--
    myFocus
    --%>
-
+    111111111111111111111111111111111111111111111111
+    <c:forEach var="notice" items="${noticeList}">
+        <li><a href="${pageContext.request.contextPath}/notice/showNotice?id=${notice.noticeid}" target="view_window">${notice.title}</a></li>
+    </c:forEach>
     <div id="newsDiv" class="row">
 
     <div id="leftNewsDiv" class="col-lg-2 col-md-2">
@@ -104,10 +107,10 @@
                     <div class="pull-right">
                         <label>[ 公示公告 ]</label>
                         <label>2017-11-01</label>
-                    </div>
-                </li>
+                        </div>
+                    </li>
 
-                <li>
+                    <li>
                     <div class="pull-left">
                         <a href="#">五支队第六届运动会预赛阶段全面展开</a>
                     </div>

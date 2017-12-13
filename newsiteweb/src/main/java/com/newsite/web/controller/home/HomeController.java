@@ -1,16 +1,23 @@
 package com.newsite.web.controller.home;
 
+import com.newsite.web.model.Notice;
+import com.newsite.web.service.NoticeService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 @Controller
 @RequestMapping("/")
 public class HomeController {
 
+
+    @Resource
+    private NoticeService noticeService;
 
     @RequestMapping("/")
     public ModelAndView index1(HttpServletRequest request, HttpServletResponse response){
@@ -22,6 +29,8 @@ public class HomeController {
     @RequestMapping("/index")
     public ModelAndView index2(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
+        List<Notice> noticeList = noticeService.getAllNotices();
+        modelAndView.addObject("noticeList",noticeList);
         modelAndView.setViewName("index");
         return modelAndView;
     }
@@ -34,7 +43,7 @@ public class HomeController {
     @RequestMapping("/2zhongdui")
     public ModelAndView index4(HttpServletRequest request, HttpServletResponse response){
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("news/singlenews");
+        modelAndView.setViewName("zhongdui/2zhongdui");
         return modelAndView;
     }
     @RequestMapping("/3zhongdui")
