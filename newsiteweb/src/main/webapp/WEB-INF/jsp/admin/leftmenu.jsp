@@ -41,9 +41,17 @@
                     <i class="fa fa-dashboard"></i> <span>新闻列表</span>
                 </a>
             </li>
+
+
             <li id="newsPublishLi">
                 <a href="${ctx}/manager/newspublish">
                     <i class="fa fa-gavel"></i> <span>新闻发布</span>
+                </a>
+            </li>
+
+            <li class="active" id="noticeListLi">
+                <a href="${ctx}/manager/noticelist">
+                    <i class="fa fa-dashboard"></i> <span>公告列表</span>
                 </a>
             </li>
 

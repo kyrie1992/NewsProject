@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.newsite.web.dao.NewsMapper" >
+  <resultMap id="BaseResultMap" type="com.newsite.web.model.News" >
+    <id column="newid" property="newid" jdbcType="BIGINT" />
+    <result column="newtitle" property="newtitle" jdbcType="VARCHAR" />
+    <result column="author" property="author" jdbcType="VARCHAR" />
+    <result column="photographer" property="photographer" jdbcType="VARCHAR" />
+    <result column="kind" property="kind" jdbcType="VARCHAR" />
+    <result column="unit" property="unit" jdbcType="VARCHAR" />
+    <result column="approver" property="approver" jdbcType="VARCHAR" />
+    <result column="createtime" property="createtime" jdbcType="TIMESTAMP" />
+    <result column="looknum" property="looknum" jdbcType="INTEGER" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.newsite.web.model.News" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    newid, newtitle, author, photographer, kind, unit, approver, createtime, looknum
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from news
+    where newid = #{newid,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from news
+    where newid = #{newid,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.newsite.web.model.News" >
+    insert into news (newid, newtitle, author, 
+      photographer, kind, unit, 
+      approver, createtime, looknum, 
+      content)
+    values (#{newid,jdbcType=BIGINT}, #{newtitle,jdbcType=VARCHAR}, #{author,jdbcType=VARCHAR}, 
+      #{photographer,jdbcType=VARCHAR}, #{kind,jdbcType=VARCHAR}, #{unit,jdbcType=VARCHAR}, 
+      #{approver,jdbcType=VARCHAR}, #{createtime,jdbcType=TIMESTAMP}, #{looknum,jdbcType=INTEGER}, 
+      #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.newsite.web.model.News" >
+    insert into news
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="newid != null" >
+        newid,
+      </if>
+      <if test="newtitle != null" >
+        newtitle,
+      </if>
+      <if test="author != null" >
+        author,
+      </if>
+      <if test="photographer != null" >
+        photographer,
+      </if>
+      <if test="kind != null" >
+        kind,
+      </if>
+      <if test="unit != null" >
+        unit,
+      </if>
+      <if test="approver != null" >
+        approver,
+      </if>
+      <if test="createtime != null" >
+        createtime,
+      </if>
+      <if test="looknum != null" >
+        looknum,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="newid != null" >
+        #{newid,jdbcType=BIGINT},
+      </if>
+      <if test="newtitle != null" >
+        #{newtitle,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="photographer != null" >
+        #{photographer,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null" >
+        #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="unit != null" >
+        #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="approver != null" >
+        #{approver,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="looknum != null" >
+        #{looknum,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.newsite.web.model.News" >
+    update news
+    <set >
+      <if test="newtitle != null" >
+        newtitle = #{newtitle,jdbcType=VARCHAR},
+      </if>
+      <if test="author != null" >
+        author = #{author,jdbcType=VARCHAR},
+      </if>
+      <if test="photographer != null" >
+        photographer = #{photographer,jdbcType=VARCHAR},
+      </if>
+      <if test="kind != null" >
+        kind = #{kind,jdbcType=VARCHAR},
+      </if>
+      <if test="unit != null" >
+        unit = #{unit,jdbcType=VARCHAR},
+      </if>
+      <if test="approver != null" >
+        approver = #{approver,jdbcType=VARCHAR},
+      </if>
+      <if test="createtime != null" >
+        createtime = #{createtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="looknum != null" >
+        looknum = #{looknum,jdbcType=INTEGER},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where newid = #{newid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.newsite.web.model.News" >
+    update news
+    set newtitle = #{newtitle,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR},
+      photographer = #{photographer,jdbcType=VARCHAR},
+      kind = #{kind,jdbcType=VARCHAR},
+      unit = #{unit,jdbcType=VARCHAR},
+      approver = #{approver,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      looknum = #{looknum,jdbcType=INTEGER},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where newid = #{newid,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.newsite.web.model.News" >
+    update news
+    set newtitle = #{newtitle,jdbcType=VARCHAR},
+      author = #{author,jdbcType=VARCHAR},
+      photographer = #{photographer,jdbcType=VARCHAR},
+      kind = #{kind,jdbcType=VARCHAR},
+      unit = #{unit,jdbcType=VARCHAR},
+      approver = #{approver,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=TIMESTAMP},
+      looknum = #{looknum,jdbcType=INTEGER}
+    where newid = #{newid,jdbcType=BIGINT}
+  </update>
+</mapper>
