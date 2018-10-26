@@ -1,6 +1,7 @@
 package com.newsite.web.controller.home;
 
 import com.newsite.web.model.TreeNode;
+import com.newsite.web.service.FileUtils;
 import com.newsite.web.service.ReportGenerator;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -32,9 +33,16 @@ public class HomeController {
     }
 
     @ResponseBody
-    @RequestMapping("/fileDetail")
+    @RequestMapping(value = "/fileDetail",produces="text/html;charset=UTF-8;")
     public String index2(HttpServletRequest request, HttpServletResponse response) {
-        String fileName = request.getParameter("fileName");
-        return fileName;
+        try {
+            String fileName = request.getParameter("fileName");
+            File[] result = FileUtils.searchFile(new File("D:\\周报"), fileName);
+            String filecontent = FileUtils.readFile(new File(result[0].getAbsolutePath()));
+            return filecontent;
+        }catch (Exception ex){
+            System.err.println("读取文件内容错误："+ex.getMessage());
+        }
+        return null;
     }
 }

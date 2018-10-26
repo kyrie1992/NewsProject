@@ -30,6 +30,31 @@
             <div id="treeview"/>
         </div>
     </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content" style="height:700px;">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">×
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">
+                        代码详情
+                    </h4>
+                </div>
+                <div class="modal-body" id="modelBody" style="height:500px;">
+                      <pre id="fileDetailDiv" style="height:500px;">
+
+                     </pre>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default"
+                            data-dismiss="modal">关闭
+                    </button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
 
 </div>
 
@@ -146,10 +171,11 @@
         $.ajax({
             type: "POST",
             url: "fileDetail",
-            data: {fileName:fileName},
-            dataType: "text",
+            data: {fileName: fileName},
+            dataType: "html",
             success: function (data) {
-                console.log(data);
+                $("#fileDetailDiv").html(data);
+                $("#myModal").modal('show');
             },
             error: function (e) {
                 console.log(e);
