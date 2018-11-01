@@ -41,16 +41,16 @@
                         代码详情
                     </h4>
                 </div>
-                <div class="modal-body" id="modelBody" style="height:500px;">
-                      <pre id="fileDetailDiv" style="height:500px;">
+                <div class="modal-body" id="modelBody" style="height:600px;">
+                      <pre id="fileDetailDiv" style="height:600px;">
 
                      </pre>
                 </div>
-                <div class="modal-footer">
+            <%--    <div class="modal-footer">
                     <button type="button" class="btn btn-default"
                             data-dismiss="modal">关闭
                     </button>
-                </div>
+                </div>--%>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
@@ -175,6 +175,15 @@
             dataType: "html",
             success: function (data) {
                 $("#fileDetailDiv").html(data);
+                var arr = $("#fileDetailDiv").html().split("\n");
+                var text = "<ol>";
+                $.each(arr,function(i,item){
+                    if(item.trim()!=""){
+                        text += "<li>"+ item +"</li>";
+                    }
+                });
+                text += "</ol>";
+                $("#fileDetailDiv").html(text);
                 $("#myModal").modal('show');
             },
             error: function (e) {
