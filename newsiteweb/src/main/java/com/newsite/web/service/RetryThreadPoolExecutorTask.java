@@ -1,6 +1,6 @@
 package com.newsite.web.service;
 
-import com.newsite.web.model.MonitorThread;
+import com.newsite.web.model.MonitorThreadRunnable;
 import com.newsite.web.model.SingleTask;
 
 import java.util.concurrent.ArrayBlockingQueue;
@@ -24,6 +24,9 @@ public class RetryThreadPoolExecutorTask {
                 , Executors.defaultThreadFactory()
                 , new ThreadRejectedHandler()
         );
+        MonitorThreadRunnable monitorThreadRunnable = new MonitorThreadRunnable(threadPoolExecutor);
+        Thread monitorThread = new Thread(monitorThreadRunnable);
+        monitorThread.start();
         for(int i=0;i<6;i++){
             SingleTask task = new SingleTask(i+1,"任务"+(i+1));
             threadPoolExecutor.execute(task);

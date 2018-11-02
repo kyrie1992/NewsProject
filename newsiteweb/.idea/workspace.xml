@@ -7,11 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1aeabe1-ebf0-4766-a8fe-72137acec7fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/ThreadRejectedHandler.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/SingleTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/SingleTask.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThreadRunnable.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RetryThreadPoolExecutorTask.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RetryThreadPoolExecutorTask.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+            <state relative-caret-position="557">
+              <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadRejectedHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreadRejectedHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/ThreadRejectedHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="540">
+              <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,15 +113,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonitorThread.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java">
+      <file leaf-file-name="MonitorThreadRunnable.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThreadRunnable.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding>
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -235,10 +230,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/model/SingleTask.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/ThreadRejectedHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThreadRunnable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java" />
       </list>
     </option>
   </component>
@@ -1359,7 +1355,7 @@
       <workItem from="1509946978168" duration="284000" />
       <workItem from="1540525187106" duration="29631000" />
       <workItem from="1540782121503" duration="8838000" />
-      <workItem from="1541124272655" duration="1487000" />
+      <workItem from="1541124272655" duration="1828000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目内容">
       <created>1509719480372</created>
@@ -1480,11 +1476,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541074951573</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Merge branch 'f_originproject' of https://github.com/kyrie1992/NewsProject into f_originproject&#10;&#10;Conflicts:&#10;&#9;newsiteweb/.idea/workspace.xml&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/news/newsdetail.jsp&#10;&#9;newsiteweb/target/newsite-web.war&#10;冲突解决">
+      <created>1541126196229</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1541126196229</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77828000" />
+    <option name="totallyTimeSpent" value="78169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1812,6 +1815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11022">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1992,17 +1996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/model/SingleTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -2011,20 +2004,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/ThreadRejectedHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+        <state relative-caret-position="540">
+          <caret line="21" column="35" lean-forward="true" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/ThreadRejectedHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/model/MonitorThreadRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="210">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/RetryThreadPoolExecutorTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="30" column="49" lean-forward="true" selection-start-line="30" selection-start-column="49" selection-end-line="30" selection-end-column="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

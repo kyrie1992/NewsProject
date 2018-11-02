@@ -5,10 +5,10 @@ import java.util.concurrent.ThreadPoolExecutor;
 /**
  * Created by nawei on 2018/11/1.
  */
-public class MonitorThread implements Runnable{
+public class MonitorThreadRunnable implements Runnable{
 
     private ThreadPoolExecutor threadPoolExecutor;
-    public MonitorThread(ThreadPoolExecutor threadPoolExecutor) {
+    public MonitorThreadRunnable(ThreadPoolExecutor threadPoolExecutor) {
         this.threadPoolExecutor = threadPoolExecutor;
     }
 
