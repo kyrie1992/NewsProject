@@ -35,13 +35,9 @@ public class SingleTask implements Runnable{
     public void run() {
         System.out.println("taskId:" + taskId + ",taskName:" + taskName);
         try {
-
-            Thread.sleep(10000);
-
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
-
             e.printStackTrace();
-
         }
     }
 }

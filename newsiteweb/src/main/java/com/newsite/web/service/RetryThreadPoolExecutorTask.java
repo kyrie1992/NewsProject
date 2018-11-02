@@ -17,15 +17,14 @@ public class RetryThreadPoolExecutorTask {
     public static void main(String[] args) {
         ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(// 自定义一个线程池
                 1, // coreSize
-                5, // maxSize
+                2, // maxSize
                 60, // 60s
                  TimeUnit.SECONDS, //保持的时间
                 new ArrayBlockingQueue(3) // 有界队列，容量是3个
                 , Executors.defaultThreadFactory()
-                , new ThreadPoolExecutor.AbortPolicy()
+                , new ThreadRejectedHandler()
         );
-        MonitorThread monitorThread = new MonitorThread(threadPoolExecutor);
-        for(int i=0;i<10;i++){
+        for(int i=0;i<6;i++){
             SingleTask task = new SingleTask(i+1,"任务"+(i+1));
             threadPoolExecutor.execute(task);
         }

@@ -14,9 +14,11 @@ public class MonitorThread implements Runnable{
 
     public void run() {
         try {
-            System.out.println("活跃的线程数：" + threadPoolExecutor.getActiveCount() + ",核心线程数：" + threadPoolExecutor.getCorePoolSize()
-                    + ",线程池大小：" + threadPoolExecutor.getPoolSize() + ",队列的大小" + threadPoolExecutor.getQueue().size());
-            Thread.sleep(2000);
+            while(true) {
+                System.out.println("活跃的线程数：" + threadPoolExecutor.getActiveCount() + ",核心线程数：" + threadPoolExecutor.getCorePoolSize()
+                        + ",线程池大小：" + threadPoolExecutor.getPoolSize() + ",队列的大小" + threadPoolExecutor.getQueue().size());
+                Thread.sleep(1000);
+            }
         }catch (Exception ex){
             System.err.println(ex.getMessage());
         }
