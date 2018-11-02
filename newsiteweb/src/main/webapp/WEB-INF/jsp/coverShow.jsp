@@ -19,13 +19,13 @@
 </head>
 <style type="text/css">
     .greenClass{
-        background-color: #4cae4c;
+        background-color: #c5f3c5;
     }
     .redClass{
-        background-color: #ffaaaa;
+        background-color: #ffd9d9;
     }
     .yellowClass{
-        background-color: #f0ad4e;
+        background-color: #f7f7d0;
     }
 </style>
 <body>

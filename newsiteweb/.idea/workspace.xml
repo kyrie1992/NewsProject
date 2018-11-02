@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1aeabe1-ebf0-4766-a8fe-72137acec7fc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/model/ColorLineStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/CoverResultAnalysisHelper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -128,11 +122,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="coverShow.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="coverShow.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="390">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -152,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1294">
-              <caret line="100" column="55" lean-forward="true" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
+            <state relative-caret-position="334">
+              <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#454#988#0" expanded="true" />
@@ -283,8 +277,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/CoverResultAnalysisHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/controller/home/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/model/ColorLineStatus.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp" />
       </list>
     </option>
   </component>
@@ -1528,7 +1522,7 @@
       <workItem from="1509946978168" duration="284000" />
       <workItem from="1540525187106" duration="29631000" />
       <workItem from="1540782121503" duration="8838000" />
-      <workItem from="1541124272655" duration="20481000" />
+      <workItem from="1541124272655" duration="21165000" />
     </task>
     <task id="LOCAL-00001" summary="初始化项目内容">
       <created>1509719480372</created>
@@ -1677,11 +1671,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541148442696</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="MOD：添加覆盖率显示颜色">
+      <created>1541154458667</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1541154458667</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96822000" />
+    <option name="totallyTimeSpent" value="97506000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1710,7 +1711,7 @@
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27548808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27548808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3275488" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1820,7 +1821,8 @@
     <MESSAGE value="Merge branch 'f_originproject' of https://github.com/kyrie1992/NewsProject into f_originproject&#10;&#10;Conflicts:&#10;&#9;newsiteweb/.idea/workspace.xml&#10;&#9;newsiteweb/src/main/webapp/WEB-INF/jsp/news/newsdetail.jsp&#10;&#9;newsiteweb/target/newsite-web.war&#10;冲突解决" />
     <MESSAGE value="MOD：修复多线程无法顺序输出的问题" />
     <MESSAGE value="MOD：线程死锁问题" />
-    <option name="LAST_COMMIT_MESSAGE" value="MOD：线程死锁问题" />
+    <MESSAGE value="MOD：添加覆盖率显示颜色" />
+    <option name="LAST_COMMIT_MESSAGE" value="MOD：添加覆盖率显示颜色" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2213,16 +2215,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/CoverResultAnalysisHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -2254,13 +2246,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/newsite/web/service/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1294">
-          <caret line="100" column="55" lean-forward="true" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
+        <state relative-caret-position="334">
+          <caret line="71" column="36" lean-forward="false" selection-start-line="71" selection-start-column="36" selection-end-line="71" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#454#988#0" expanded="true" />
             <element signature="e#987#988#0" expanded="true" />
             <element signature="e#1033#1039#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/coverShow.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
