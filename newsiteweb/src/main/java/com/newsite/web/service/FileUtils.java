@@ -1,5 +1,7 @@
 package com.newsite.web.service;
 
+import com.newsite.web.model.ColorLineStatus;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -73,7 +75,43 @@ public class FileUtils {
         return retBuffer.toString();
     }
 
-
+    public static String readFileByLine(File file) {
+        String resultFileStr = "";
+        try {
+            //BufferedReader br = new BufferedReader(new FileReader(file));// 构造一个BufferedReader类来读取文件
+            BufferedReader br=new BufferedReader(new InputStreamReader(new FileInputStream(file.getAbsoluteFile()),"UTF-8"));
+            String s = null;
+            while ((s = br.readLine()) != null) {// 使用readLine方法，一次读一行
+                if (s.contains("lineStatus:yes") && s.contains("branchStatus:3")) {
+                    s ="<span class='"+ ColorLineStatus.LINE_STATUS_1AndBRANCH_STATUS_3.getColorName() + "'>"+ s + "</span>"+"\r\n";
+                    resultFileStr += s;
+                    continue;
+                }else if(s.contains("lineStatus:yes") && s.contains("branchStatus:2")){
+                    s ="<span class='"+ ColorLineStatus.LINE_STATUS_1AndBRANCH_STATUS_2.getColorName() + "'>"+ s + "</span>"+"\r\n";
+                    resultFileStr += s;
+                    continue;
+                }else if(s.contains("lineStatus:yes") && (s.contains("branchStatus:0") || s.contains("branchStatus:1"))){
+                    s ="<span class='"+ ColorLineStatus.LINE_STATUS_1AndBRANCH_STATUS_0_OR_1.getColorName() + "'>"+ s + "</span>"+"\r\n";
+                    resultFileStr += s;
+                    continue;
+                }else if(s.contains("lineStatus:no")){
+                    s ="<span class='"+ ColorLineStatus.LINE_STATUS_0.getColorName() + "'>"+ s + "</span>"+"\r\n";
+                    resultFileStr += s;
+                    continue;
+                }else if(s.contains("lineStatus:yes")){
+                    s ="<span span class='"+ ColorLineStatus.LINE_STATUS_1AndBRANCH_STATUS_NO.getColorName() + "'>"+ s + "</span>"+"\r\n";
+                }
+                else{
+                    s = s +"\r\n";
+                }
+                resultFileStr += s;
+            }
+            br.close();
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+        return resultFileStr;
+    }
     /**
      * @param args
      */

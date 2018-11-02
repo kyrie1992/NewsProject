@@ -17,6 +17,17 @@
 <head>
     <title>首页</title>
 </head>
+<style type="text/css">
+    .greenClass{
+        background-color: #4cae4c;
+    }
+    .redClass{
+        background-color: #ffaaaa;
+    }
+    .yellowClass{
+        background-color: #f0ad4e;
+    }
+</style>
 <body>
 <div class="container">
     <h1>代码覆盖报告结果</h1>
@@ -160,6 +171,8 @@
                 }
             }
         });
+
+        $('#treeview').treeview('collapseAll', { silent: true });
 
     });
 

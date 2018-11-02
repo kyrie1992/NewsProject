@@ -1,6 +1,7 @@
 package com.newsite.web.controller.home;
 
 import com.newsite.web.model.TreeNode;
+import com.newsite.web.service.CoverResultAnalysisHelper;
 import com.newsite.web.service.FileUtils;
 import com.newsite.web.service.ReportGenerator;
 import org.springframework.stereotype.Controller;
@@ -23,7 +24,9 @@ public class HomeController {
         ModelAndView modelAndView = new ModelAndView();
         List<TreeNode> treeNodeList = new ArrayList<TreeNode>();
         try {
+            //CoverResultAnalysisHelper coverResultAnalysisHelper = new CoverResultAnalysisHelper();
             treeNodeList = ReportGenerator.getResultTreeData(ReportGenerator.getBundleCoverage());
+            //treeNodeList = coverResultAnalysisHelper.getAllUserInfo();
         } catch (Exception ex) {
             System.err.println("获取代码覆盖率数据错误："+ex.getMessage());
         }
@@ -38,7 +41,7 @@ public class HomeController {
         try {
             String fileName = request.getParameter("fileName");
             File[] result = FileUtils.searchFile(new File("D:\\周报"), fileName);
-            String filecontent = FileUtils.readFile(new File(result[0].getAbsolutePath()));
+            String filecontent = FileUtils.readFileByLine(new File(result[0].getAbsolutePath()));
             return filecontent;
         }catch (Exception ex){
             System.err.println("读取文件内容错误："+ex.getMessage());
