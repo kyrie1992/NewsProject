@@ -1,5 +1,7 @@
 package com.newsite.web.model;
 
+import com.newsite.web.service.RetryThreadPoolExecutorTask;
+
 import java.util.concurrent.ThreadPoolExecutor;
 
 /**
@@ -17,6 +19,7 @@ public class MonitorThreadRunnable implements Runnable{
             while(true) {
                 System.out.println("活跃的线程数：" + threadPoolExecutor.getActiveCount() + ",核心线程数：" + threadPoolExecutor.getCorePoolSize()
                         + ",线程池大小：" + threadPoolExecutor.getPoolSize() + ",队列的大小" + threadPoolExecutor.getQueue().size());
+                System.out.println(RetryThreadPoolExecutorTask.flag%RetryThreadPoolExecutorTask.taskCount);
                 Thread.sleep(1000);
             }
         }catch (Exception ex){

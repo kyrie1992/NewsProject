@@ -1,10 +1,12 @@
 package com.newsite.web.model;
 
+import com.newsite.web.service.RetryThreadPoolExecutorTask;
+
 /**
- *  单个任务
+ * 单个任务
  * Created by nawei on 2018/11/1.
  */
-public class SingleTask implements Runnable{
+public class SingleTask implements Runnable {
     //任务id
     private int taskId;
     //任务名字
@@ -25,19 +27,37 @@ public class SingleTask implements Runnable{
     public void setTaskName(String taskName) {
         this.taskName = taskName;
     }
+
     //构造函数
-    public SingleTask(int taskId,String taskName){
+    public SingleTask(int taskId, String taskName) {
         this.taskId = taskId;
         this.taskName = taskName;
     }
 
     //run方法
     public void run() {
-        System.out.println("taskId:" + taskId + ",taskName:" + taskName);
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        while(true) {
+            /*synchronized (RetryThreadPoolExecutorTask.object) {
+                int flag = RetryThreadPoolExecutorTask.flag % RetryThreadPoolExecutorTask.taskCount;
+                if(flag == taskId){
+                    System.out.println("taskId:" + taskId + ",taskName:" + taskName);
+                    RetryThreadPoolExecutorTask.flag++;
+                }
+            }*/
+            synchronized (RetryThreadPoolExecutorTask.object) {
+                int flag = RetryThreadPoolExecutorTask.flag % RetryThreadPoolExecutorTask.taskCount;
+                if (flag != taskId) {
+                    try {
+                        RetryThreadPoolExecutorTask.object.wait();
+                        continue;
+                    } catch (Exception ex) {
+                        ex.printStackTrace();
+                    }
+                }
+                System.out.println("taskId:" + taskId + ",taskName:" + taskName + ",flag:" + flag);
+                RetryThreadPoolExecutorTask.flag++;
+                RetryThreadPoolExecutorTask.object.notifyAll();
+            }
         }
     }
 }
