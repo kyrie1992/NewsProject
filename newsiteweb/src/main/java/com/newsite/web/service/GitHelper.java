@@ -29,8 +29,8 @@ public class GitHelper {
         /*cloneCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("usernmae","password"));*/
         String currentBranch = getCurrentBranch(gitFilePath);
         System.out.println(currentBranch);
-        String parentBranch = "origin/f_coverReportShow";
-        String childBranch = "f_coverReportShow";
+        String parentBranch = "f_coverReportShow";
+        String childBranch = "f_coverReportShow1";
         try {
             Git git=Git.open(new File(gitFilePath));
             diffMethod(git,childBranch,parentBranch);
