@@ -2,14 +2,19 @@ package com.newsite.web.service;
 
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.LogCommand;
+import org.eclipse.jgit.api.PullResult;
 import org.eclipse.jgit.api.errors.GitAPIException;
 import org.eclipse.jgit.diff.DiffEntry;
 import org.eclipse.jgit.diff.DiffFormatter;
+import org.eclipse.jgit.diff.Edit;
+import org.eclipse.jgit.diff.EditList;
 import org.eclipse.jgit.errors.IncorrectObjectTypeException;
 import org.eclipse.jgit.lib.ObjectId;
 import org.eclipse.jgit.lib.ObjectReader;
 import org.eclipse.jgit.lib.Repository;
 import org.eclipse.jgit.lib.StoredConfig;
+import org.eclipse.jgit.patch.FileHeader;
+import org.eclipse.jgit.patch.HunkHeader;
 import org.eclipse.jgit.revwalk.RevCommit;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 import org.eclipse.jgit.treewalk.CanonicalTreeParser;
@@ -24,19 +29,25 @@ import java.util.List;
  */
 public class GitHelper {
 
+    private static String remotePath = "https://github.com/kyrie1992/NewsProject.git";
+    private static String localPath = "D:\\git\\NewsProject";
+    private static String userName = "";
+    private static String passWord = "";
+
     public static void main(String[] args) throws Exception{
         String gitFilePath = "D:\\git\\NewsProject";
-        /*cloneCommand.setCredentialsProvider(new UsernamePasswordCredentialsProvider("usernmae","password"));*/
         String currentBranch = getCurrentBranch(gitFilePath);
         System.out.println(currentBranch);
-        String parentBranch = "f_coverReportShow";
+        //gitCloneRemoteBranch();
+        checkoutBranch("f_coverReportShow");
+        /*String parentBranch = "f_coverReportShow";
         String childBranch = "f_coverReportShow1";
         try {
             Git git=Git.open(new File(gitFilePath));
             diffMethod(git,childBranch,parentBranch);
         } catch (IOException e1) {
             e1.printStackTrace();
-        }
+        }*/
     }
 
     public static void log(String localPath){
@@ -53,6 +64,37 @@ public class GitHelper {
         }
     }
 
+    //切换分支
+    public static void checkoutBranch(String branchName){
+        String projectURL = localPath + "\\.git";
+
+        Git git = null;
+        try {
+            git = Git.open(new File(projectURL));
+            git.checkout().setCreateBranch(true).setName(branchName).call();
+            git.pull().call();
+            System.out.println("切换分支成功");
+        }catch (Exception e){
+            e.printStackTrace();
+            System.out.println("切换分支失败");
+        } finally{
+            if (git != null) {
+                git.close();
+            }
+        }
+    }
+
+
+
+    public static String gitCloneRemoteBranch() throws Exception{
+        //设置远程服务器上的用户名和密码
+        UsernamePasswordCredentialsProvider usernamePasswordCredentialsProvider =new
+                UsernamePasswordCredentialsProvider(userName,passWord);
+        Git git = Git.open(new File(localPath));
+        PullResult pullResult = git.pull().setCredentialsProvider(usernamePasswordCredentialsProvider).call();
+        System.out.print(git.tag());
+        return "";
+    }
     /**
      * 拿到当前本地分支名
      * @param localPath 主仓
@@ -100,6 +142,18 @@ public class GitHelper {
                 df.format(diffEntry);
                 String diffText = out.toString("UTF-8");
                 System.out.println(diffText);
+
+                FileHeader fileHeader = df.toFileHeader(diffEntry);
+                List<HunkHeader> hunks = (List<HunkHeader>) fileHeader.getHunks();
+                int addSize = 0;
+                int subSize = 0;
+                for(HunkHeader hunkHeader:hunks){
+                    EditList editList = hunkHeader.toEditList();
+                    for(Edit edit : editList){
+                        subSize += edit.getEndA()-edit.getBeginA();
+                        addSize += edit.getEndB()-edit.getBeginB();
+                    }
+                }
                 //  out.reset();
             }
         } catch (IncorrectObjectTypeException e) {
