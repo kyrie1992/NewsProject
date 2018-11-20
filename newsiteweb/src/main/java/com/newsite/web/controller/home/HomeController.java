@@ -19,6 +19,13 @@ import java.util.List;
 @RequestMapping("/")
 public class HomeController {
 
+    @RequestMapping("/")
+    public ModelAndView index(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("/layui/index");
+        return modelAndView;
+    }
+
     @RequestMapping("/index")
     public ModelAndView index1(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView modelAndView = new ModelAndView();

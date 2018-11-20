@@ -35,11 +35,27 @@ public class GitHelper {
     private static String passWord = "";
 
     public static void main(String[] args) throws Exception{
-        String gitFilePath = "D:\\git\\NewsProject";
+
+
+        String testStr = "/fund-core/src/test/java/fund_core/HHBindTest.java";
+
+       /* int startStrIndex = testStr.indexOf("com/");
+        int strLength = testStr.length();
+        String classPackageName = testStr.substring(startStrIndex,strLength);
+        System.out.println(classPackageName);*/
+       String type = "1";
+       if(type.equals(Integer.valueOf("1").toString())){
+           System.out.println("ok");
+       }else{
+           System.out.println("Error");
+       }
+
+        /*String gitFilePath = "D:\\git\\NewsProject";
         String currentBranch = getCurrentBranch(gitFilePath);
         System.out.println(currentBranch);
+        diffMethod(Git.open(new File(localPath)),"master","f_coverReportShow");*/
         //gitCloneRemoteBranch();
-        checkoutBranch("f_coverReportShow");
+        //checkoutBranch("f_coverReportShow");
         /*String parentBranch = "f_coverReportShow";
         String childBranch = "f_coverReportShow1";
         try {
