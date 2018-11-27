@@ -19,7 +19,7 @@ import java.util.List;
 @RequestMapping("/")
 public class HomeController {
 
-    @RequestMapping("/")
+    @RequestMapping("/home")
     public ModelAndView index(){
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/layui/index");

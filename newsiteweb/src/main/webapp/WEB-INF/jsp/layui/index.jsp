@@ -78,35 +78,23 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
+        <!-- 内容主体区域 -->
         <div style="padding: 15px;">
-            <table class="layui-table">
-                <colgroup>
-                    <col width="150">
-                    <col width="200">
-                    <col>
-                </colgroup>
-                <thead>
-                <tr>
-                    <th>昵称</th>
-                    <th>加入时间</th>
-                    <th>签名</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>贤心</td>
-                    <td>2016-11-29</td>
-                    <td>人生就像是一场修行</td>
-                </tr>
-                <tr>
-                    <td>许闲心</td>
-                    <td>2016-11-28</td>
-                    <td>于千万人之中遇见你所遇见的人，于千万年之中，时间的无涯的荒野里…</td>
-                </tr>
-                </tbody>
-            </table>
+           <%-- <form id="upload-form" enctype="multipart/form-data" method="post">
+                  <input type="file" name="pic[]">
+                  <input type="hidden" name="MAX_FILE_SIZE" value="10000000">
+                  <input type="button" name="sub" value="上传" onclick="submitImgSize1Upload()">               
+            </form>--%>
+        </div>
+
+        <div style="padding: 15px;margin-left: 300px;">
+            <input type="file" id="img-upload">
+            <button id="submit-button">开始上传</button>
+
         </div>
     </div>
+
+
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
@@ -114,6 +102,32 @@
     </div>
 </div>
 <script src="${pageContext.request.contextPath}/js/layui.js"></script>
+<script src="${pageContext.request.contextPath}/js/common/jquery-1.11.3.js"></script>
+<script src="${pageContext.request.contextPath}/js/common/jquery.form.js"></script>
+
+<script>
+    $('#submit-button').on('click',function(){
+        var myPhoto = $('#img-upload')[0].files[0];
+        var oMyForm = new FormData();
+        oMyForm.append("name", 'zhengnawei');
+        oMyForm.append("userfile", myPhoto);
+        $.ajax({
+            type : 'POST',
+            url : 'http://192.168.80.128:30000/imgUpload',
+            cache : false,  //不需要缓存
+            crossDomain:true,
+            processData : false,    //不需要进行数据转换
+            contentType : false, //默认数据传输方式是application,改为false，编程multipart
+            data : oMyForm,
+            dataType : 'json'
+        }).done(function(data){
+            console.log(data);
+            alert(data.errMsg);
+        }).fail(function(err){
+            console.log(err);
+        });
+    });
+</script>
 
 
 <script>
