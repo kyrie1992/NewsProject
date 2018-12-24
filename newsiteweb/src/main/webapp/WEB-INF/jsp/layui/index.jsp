@@ -106,7 +106,7 @@
 <script src="${pageContext.request.contextPath}/js/common/jquery.form.js"></script>
 
 <script>
-    $('#submit-button').on('click',function(){
+    /*$('#submit-button').on('click',function(){
         var myPhoto = $('#img-upload')[0].files[0];
         var oMyForm = new FormData();
         oMyForm.append("name", 'zhengnawei');
@@ -119,6 +119,24 @@
             processData : false,    //不需要进行数据转换
             contentType : false, //默认数据传输方式是application,改为false，编程multipart
             data : oMyForm,
+            dataType : 'json'
+        }).done(function(data){
+            console.log(data);
+            alert(data.errMsg);
+        }).fail(function(err){
+            console.log(err);
+        });
+    });*/
+    $('#submit-button').on('click',function(){
+        var myPhoto = $('#img-upload')[0].files[0];
+        var oMyForm = new FormData();
+        oMyForm.append("name", 'zhengnawei');
+        oMyForm.append("myphoto", "20181127142643_6225.jpg");
+        $.ajax({
+            type : 'GET',
+            url : 'http://192.168.80.128:30000/imgDownload',
+            jsonp:'callback',
+            data : {myphotoss:"20181127142643_6225.jpg"},
             dataType : 'json'
         }).done(function(data){
             console.log(data);

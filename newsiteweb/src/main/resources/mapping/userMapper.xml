@@ -6,6 +6,25 @@
         <result column="username" property="username" jdbcType="VARCHAR" />
         <result column="passwd" property="passwd" jdbcType="VARCHAR" />
     </resultMap>
+
+    <resultMap id="queryUserRoleMap" type="com.newsite.web.model.User" >
+        <id column="userid" property="userid" jdbcType="INTEGER" />
+        <result column="username" property="username" jdbcType="VARCHAR" />
+        <result column="passwd" property="passwd" jdbcType="VARCHAR" />
+        <collection property="userRole" ofType="com.newsite.web.model.UserRole">
+            <result column="userid" property="userId" jdbcType="VARCHAR" />
+            <result column="roles" property="roles" jdbcType="VARCHAR" />
+        </collection>
+    </resultMap>
+
+    <select id="selectUserRole" resultMap="queryUserRoleMap">
+        select
+        *
+        from user u,user_role r
+        where u.userid = r.userid
+    </select>
+
+
     <sql id="Base_Column_List" >
         userid, username, passwd
     </sql>

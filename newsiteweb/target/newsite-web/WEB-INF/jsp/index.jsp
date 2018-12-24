@@ -14,7 +14,8 @@
 </head>
 <body>
 <div class="container">
-    <%@ include file="./common/title.jsp" %>
+    nihao
+    <%--<%@ include file="./common/title.jsp" %>
     <div id="picDiv" class="row">
         <img class="img-responsive center-block" src="${pageContext.request.contextPath}/image/home/index_bg.png"/>
     </div>
@@ -195,7 +196,7 @@
 
     </div>
 
-    <%@ include file="./common/footer.jsp" %>
+    <%@ include file="./common/footer.jsp" %>--%>
 </div>
 </body>
 </html>

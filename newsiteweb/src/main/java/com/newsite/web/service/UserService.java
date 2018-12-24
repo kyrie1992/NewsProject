@@ -14,6 +14,7 @@ public class UserService {
 
     public User getUserInfo(){
         User user = userMapper.selectByPrimaryKey(1);
+        user = userMapper.selectUserRole();
         return user;
     }
 

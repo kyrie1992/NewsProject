@@ -7,6 +7,8 @@ public class User {
 
     private String passwd;
 
+    private UserRole userRole;
+
     public Integer getUserid() {
         return userid;
     }
@@ -29,5 +31,13 @@ public class User {
 
     public void setPasswd(String passwd) {
         this.passwd = passwd == null ? null : passwd.trim();
+    }
+
+    public UserRole getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(UserRole userRole) {
+        this.userRole = userRole;
     }
 }
